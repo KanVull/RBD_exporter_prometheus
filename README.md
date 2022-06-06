@@ -35,6 +35,7 @@ scrape_configs:
     - localhost:9248
 ```
 **Port in targets must be changed to your port (9248 by default)**
+
 Prometheus will be scraping your database metrics with time interval equal scrape_interval variable in job area
 
 ## Grafana grafic enviroment
@@ -44,6 +45,7 @@ For running nicely dashboard view of your metrics you must import [Grafana DashB
 
 ## RDB_Exporter
 Python version 3.6+
+
 Create virtualenv in project dir
 ```
 virtualenv Env
@@ -78,6 +80,7 @@ python3 rdb_exporter.py
 ```
 
 After that you shall see [localhost:9248](https://localhost:9248) for your metrics
+
 If this work, grafana will be scraping and show you your metrics in nicely humanize graffical format
 
 **2022**
